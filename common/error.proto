@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package api.common;
+
+option go_package = "github.com/kennytran1989/test-protobuf/common";
+
+message Error {
+  int32 code = 1;
+  string message = 2;
+}

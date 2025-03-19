@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package api.user;
+
+option go_package = "github.com/kennytran1989/test-protobuf/user";
+
+import "common/error.proto";
+import "google/api/annotations.proto";
+
+service UserService {
+  rpc GetUser (UserRequest) returns (UserResponse) {
+    option (google.api.http) = {
+      get: "/v1/users/{id}"
+    };
+  }
+}
+
+message UserRequest {
+  int32 id = 1;
+}
+
+message UserResponse {
+  int32 id = 1;
+  string name = 2;
+  common.Error error = 3;  // Sử dụng message từ error.proto
+}
