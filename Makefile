@@ -14,5 +14,5 @@ gen-proto:
       --go-grpc_out=paths=source_relative:. \
       --grpc-gateway_out=paths=source_relative:. \
 	  --openapiv2_out=. --openapiv2_opt=logtostderr=true\
-      user/user.proto \
+      user/v1/user.proto \
       common/error.proto

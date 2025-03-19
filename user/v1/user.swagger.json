@@ -1,7 +1,7 @@
 {
   "swagger": "2.0",
   "info": {
-    "title": "user/user.proto",
+    "title": "user/v1/user.proto",
     "version": "version not set"
   },
   "tags": [
@@ -23,7 +23,7 @@
           "200": {
             "description": "A successful response.",
             "schema": {
-              "$ref": "#/definitions/userUserResponse"
+              "$ref": "#/definitions/v1UserResponse"
             }
           },
           "default": {
@@ -89,7 +89,7 @@
         }
       }
     },
-    "userUserResponse": {
+    "v1UserResponse": {
       "type": "object",
       "properties": {
         "id": {
