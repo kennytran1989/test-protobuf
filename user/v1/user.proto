@@ -21,6 +21,6 @@ message UserRequest {
 
 message UserResponse {
   int32 id = 1;
-  string name = 2;
+  string user_name = 2;
   common.Error error = 3;  // Sử dụng message từ error.proto
 }

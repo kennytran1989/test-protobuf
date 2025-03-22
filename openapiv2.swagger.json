@@ -1,7 +1,7 @@
 {
   "swagger": "2.0",
   "info": {
-    "title": "user/v1/user.proto",
+    "title": "common/error.proto",
     "version": "version not set"
   },
   "tags": [
@@ -96,7 +96,7 @@
           "type": "integer",
           "format": "int32"
         },
-        "name": {
+        "userName": {
           "type": "string"
         },
         "error": {

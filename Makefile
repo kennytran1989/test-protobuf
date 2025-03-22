@@ -14,5 +14,15 @@ gen-proto:
       --go-grpc_out=paths=source_relative:. \
       --grpc-gateway_out=paths=source_relative:. \
 	  --openapiv2_out=. --openapiv2_opt=logtostderr=true\
-      user/v1/user.proto \
-      common/error.proto
+	  --openapiv2_opt=allow_merge=true,merge_file_name=openapiv2 \
+	  $(shell find find common user -type f -name "*.proto")
+# 	  $(shell find . -maxdepth 4 -name *.proto)
+#	  user/v1/user.proto \
+#     common/error.proto
+
+
+#test:
+#	@echo $(shell find ../api2 -maxdepth 3 -name *.proto)
+#	@echo $(shell pwd)
+#	@echo $(shell find  -maxdepth 4 -name *.proto)
+
