@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package api.common;
 
-option go_package = "github.com/kennytran1989/test-protobuf/common";
+option go_package = "github.com/kennytran1989/test-protobuf/common/v1;v1";
 
 message Error {
   int32 code = 1;

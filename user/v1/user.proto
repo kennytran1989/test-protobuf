@@ -4,7 +4,7 @@ package api.user.v1;
 
 option go_package = "github.com/kennytran1989/test-protobuf/user/v1;v1";
 
-import "common/error.proto";
+import "common/v1/error.proto";
 import "google/api/annotations.proto";
 
 service UserService {
